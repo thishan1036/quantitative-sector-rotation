@@ -10,14 +10,18 @@ This project develops and backtests a machine learning model to rotate monthly b
 * **Conclusion:** This project is a case study in the critical importance of robust backtesting and model diagnostics. It demonstrates that a superficially positive result can be misleading without a deep analysis of the biases a model learns from its training data.
 
 ## Technology Stack & Methods
-* **Languages/Libraries:** Python, Pandas, NumPy, Scikit-Learn, Matplotlib, `yfinance`, `pandas_datareader`
+* **Languages/Libraries:** Python, Pandas, NumPy, Scikit-Learn, Matplotlib, yfinance, pandas_datareader
 * **Techniques:** Time-Series Analysis, Feature Engineering, Walk-Forward Validation, Random Forest, Elastic Net, Model Diagnostics
 
 ## Project Structure
-* **`.ipynb Notebook`**: The main file containing the entire analysis, from data downloading and cleaning to modeling, backtesting, and conclusion.
-* **`.gitignore`**: Specifies files and directories to be ignored by Git.
+* **.ipynb Notebook**: The main file containing the entire analysis, from data downloading and cleaning to modeling, backtesting, and conclusion.
+* **.gitignore**: Specifies files and directories to be ignored by Git.
 
 ## How to Run
 1.  Clone the repository to your local machine.
 2.  Ensure you have the required libraries from the Technology Stack installed.
-3.  Run the `sector_rotation.ipynb` notebook. The script is self-contained and downloads all necessary market data via APIs.
+3.  Run the sector_rotation.ipynb notebook. The script is self-contained and downloads all necessary market data via APIs.
+
+## Data Sources
+* Stock and ETF price data was sourced from **Yahoo Finance** via the yfinance library.
+* Macroeconomic data (High-Yield Spread) was sourced from the **FRED database** via the pandas-datareader library.
