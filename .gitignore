@@ -9,3 +9,6 @@
 
 # All PowerPoint files
 *.pptx
+
+# All PDF files
+*.pdf
