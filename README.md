@@ -3,6 +3,9 @@
 ## Project Objective
 This project develops and backtests a machine learning model to rotate monthly between 11 US sector ETFs. The primary objective was to determine if a data-driven, active rotation strategy could consistently outperform a passive S&P 500 (SPY) benchmark. The entire workflow, from data acquisition and feature engineering to walk-forward validation with an expanding window and performance analysis, is contained within the notebook.
 
+## Performance Summary
+The final backtest (2014-2025) shows the Random Forest strategy initially ourperformed the SPY benchmark but ultimately failed to provide conssitent, risk-adjusted edge. The strategy also exhibited significantly higher volatiliy and deeper drawdowns than the passive benchmark, particulary during market stress events like the 2020 crash.
+
 ## Key Findings & Conclusion
 * **Model Failure Analysis:** The primary models (Random Forest, Elastic Net) failed to provide a reliable predictive edge for selecting top-performing sectors. The investigation into this failure revealed two key insights into model behavior:
     * **1. Environmental Bias:** The Elastic Net model became "lazy," learning to simply predict positive returns after being trained on a dataset composed of an 82% bull market regime. This resulted in a high directional accuracy that was mimicking the broader market and ultimately meaningless.
